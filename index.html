@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Beast Motors</title>
+    <link rel="stylesheet" href="CarWebsiteUsingHtmlCss.css">
+    <link rel="icon" type="image/png" href="LOGO.png">
+</head>
+
+<body id="top">
+    <div>
+        <!-- <img class="bgImg" src="BGNew.jpg" alt=""> -->
+    </div>
+    <header>
+        <div>
+            <nav>
+                <div class="logo-section">
+                    <img class="logo" src="LOGO.png" alt="">
+                    <div class="tagline">
+                        <span class="bold">Big Performance</span><br> Small Price.
+                    </div>
+                </div>
+                <!-- Hamburger for mobile -->
+                <input type="checkbox" id="menuToggle">
+                <label for="menuToggle" class="hamburger">☰</label>
+                <!-- Hidden checkbox toggle -->
+                <input type="checkbox" id="searchToggle" hidden>
+                <div class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#aboutUs">About</a>
+                    <a href="#brands">Brands</a>
+                    <a href="InventoryPage.html">Inventory</a>
+                    <a href="#services">Services</a>
+                    <a href="ContactUsPage.html">Contact</a>
+                </div>
+                <!-- Search bar -->
+                <form class="search-bar">
+                    <input type="text" placeholder="Search cars..." />
+                    <button class="search-button">
+                        <img src="searchICON.png" alt="">
+                    </button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="Home" id="home">
+            <section class="Hero">
+                <div>
+                    <p>
+                        <span>“More than cars — it’s a lifestyle.”</span>
+                        At Budget Beast Motors, we believe driving is an experience that goes beyond the road.
+                        We bring you a curated collection of high-quality vehicles that combine innovation, style, and
+                        performance, crafted for those who expect more from every moment behind the wheel.
+                        Whether you're chasing the thrill of speed, the elegance of luxury, or the comfort of premium
+                        engineering, our passion drives us to deliver cars that inspire confidence and elevate your
+                        everyday journey.
+                        With trust, transparency, and uncompromised quality at our core, we’re here to help you discover
+                        your perfect drive — one that matches your ambition and fuels your lifestyle.
+                    </p>
+                </div>
+                <div>
+                    <video src="CarShowReel.MP4" autoplay muted loop></video>
+                </div>
+            </section>
+            <section class="Newmodels">
+                <h1>New Models</h1>
+                <a href="carDetails.html#RollsRoyceGhost">
+                    <img src="CarsPngs/RollsRoyceSpofec.png" alt="Rolls Royce Ghost">
+                    Rolls Royce Ghost
+                </a>
+                <a href="carDetails.html#LamboHuracan">
+                    <img src="CarsPngs/LamboHuracan.png" alt="Lamborghini Huracán EVO">
+                    Lamborghini Huracán
+                </a>
+                <a href="carDetails.html#FordMustang">
+                    <img src="CarsPngs/Mustang.png" title="Ford Mustang GT" alt="Ford Mustang GT">
+                    Ford Mustang
+                </a>
+                <a href="carDetails.html#ChevroletCamaroSS">
+                    <img src="CarsPngs/Camero.png" alt="Chevrolet Camaro SS" title="Chevrolet Camaro SS">
+                    Chevrolet Camaro
+                </a>
+                <a href="carDetails.html#BMW">
+                    <img src="CarsPngs/BMW.png" title="BMW M3 GTR" alt="BMW M3 GTR">
+                    BMW M3 GTR
+                </a>
+                <a id="InventoryBtn" href="InventoryPage.html">
+                    explore more →
+                </a>
+
+            </section>
+
+        </div>
+        <div id="brands">
+            <section class="Brands">
+                <h1>Our Brands</h1>
+                <a href="InventoryPage.html#audi"><img src="CarsPngs/AudiLogo.png" alt=""></a>
+                <a href="InventoryPage.html#bmw"><img src="CarsPngs/BMWLogo.png" alt=""></a>
+                <a href="InventoryPage.html#cheverlot"><img src="CarsPngs/CheverlotLogo.png" alt=""></a>
+                <a href="InventoryPage.html#ford"><img src="CarsPngs/fordlogo.png" alt=""></a>
+                <a href="InventoryPage.html#rangerover"><img src="CarsPngs/LandRoverLogo.png" alt=""></a>
+                <a href="InventoryPage.html#mercedes"><img src="CarsPngs/MercedesBenzLogo.png" alt=""></a>
+                <a href="InventoryPage.html#volvo"><img src="CarsPngs/VolvoLogo.png" alt=""></a>
+                <a href="InventoryPage.html#rr"><img src="CarsPngs/RollsroyceLogo.png" alt=""></a>
+                <a href="InventoryPage.html#lambo"><img src="CarsPngs/LamboLogo.png" alt=""></a>
+                <a href="InventoryPage.html#ferrari"><img src="CarsPngs/FerrariLogo.png" alt=""></a>
+                <a href="InventoryPage.html#bugati"><img src="CarsPngs/bugatiLogo.png" alt=""></a>
+                <a href="InventoryPage.html#bently"><img src="CarsPngs/BentlyLogo.png" alt=""></a>
+                <a href="InventoryPage.html#mini"><img src="CarsPngs/MiniCooperLogo.png" alt=""></a>
+            </section>
+        </div>
+        <div id="services">
+            <section class="Services">
+                <h1>Our Services</h1>
+                <a href="ContactUsBookAnAppointment.html" class="service-card">
+                    <img src="Icons/service.png" alt="">
+
+                    <div class="service-info">
+                        <span>Vehicle Service</span>
+                        <!-- <span class="arrow">&#10095;</span> -->
+                        <div class="arrow">&#10095;</div>
+                    </div>
+
+                    <!-- Overlay -->
+                    <div class="overlay">
+                        <p>Complete vehicle inspection, diagnostics & professional servicing.</p>
+
+                        <!-- Fake button wrapper -->
+                        <div class="overlay-btn">
+                            Book Appointment
+                        </div>
+                    </div>
+                </a>
+                <!-- SERVICE 2 -->
+                <a href="ContactUsBookAnAppointment.html" class="service-card">
+                    <img src="Icons/modification.png" alt="Modification">
+                    <div class="service-info">
+                        <span>Modifications</span>
+                        <span class="arrow">&#10095;</span>
+                    </div>
+
+                    <div class="overlay">
+                        <p>Custom body kits, performance tuning, exhaust upgrades & more.</p>
+                        <div class="overlay-btn">Book Appointment</div>
+                    </div>
+                </a>
+
+                <!-- SERVICE 3 -->
+                <a href="ContactUsBookAnAppointment.html" class="service-card">
+                    <img src="Icons/detailing.png" alt="Detailing">
+                    <div class="service-info">
+                        <span>Detailing</span>
+                        <span class="arrow">&#10095;</span>
+                    </div>
+
+                    <div class="overlay">
+                        <p>Interior & exterior detailing for a perfect showroom finish.</p>
+                        <div class="overlay-btn">Book Appointment</div>
+                    </div>
+                </a>
+
+                <!-- SERVICE 4 -->
+                <a href="ContactUsBookAnAppointment.html" class="service-card">
+                    <img src="Icons/painting.jpg" alt="Paint Works">
+                    <div class="service-info">
+                        <span>Paint Works</span>
+                        <span class="arrow">&#10095;</span>
+                    </div>
+
+                    <div class="overlay">
+                        <p>Premium paint correction, ceramic coating & custom color jobs.</p>
+                        <div class="overlay-btn">Book Appointment</div>
+                    </div>
+                </a>
+            </section>
+
+        </div>
+        <div id="WhyUs">
+
+
+            <section class="WhyUS-Container">
+
+                <h1 class="WhyUS-title">Why Us</h1>
+                <div class="WhyUs-Description">
+                    <h1>Why We are the Top
+                        Luxury car Dealers India
+                    </h1>
+                    <p>
+                        Our commitment to quality, exceptional customer service, and an extensive selection of
+                        premium vehicles have made us the top luxury car dealers in India.
+                    </p>
+                </div>
+
+                <div class="WhyUS-Content">
+
+                    <div class="Reason-Wrap">
+
+                        <div class="Reason-Box">
+
+                            <h1>Extensive Inventory
+                                of Premium Vehicles</h1>
+                            <img src="Icons/car-front.svg" alt="">
+                            <p>We offer a wide range of luxury cars from the most prestigious brands, ensuring you have
+                                access to the finest selection available.</p>
+                        </div>
+
+                        <div class="Reason-Box">
+
+                            <h1>Uncompromising
+                                Quality Assurance</h1>
+                            <img src="Icons/patch-check.svg" alt="">
+                            <p>Each vehicle undergoes rigorous inspections and maintenance to meet the highest standards
+                                of performance, safety, and aesthetics.</p>
+                        </div>
+
+                        <div class="Reason-Box">
+                            <h1>Exceptional
+                                Customer Service</h1>
+                            <img src="Icons/tools.svg" alt="">
+                            <p>Our dedicated team provides personalized support throughout your buying journey, ensuring
+                                a seamless and satisfying experience.</p>
+                        </div>
+
+                        <div class="Reason-Box">
+                            <h1>Industry Expertise
+                                and Experience</h1>
+                            <img src="Icons/person-fill-gear.svg" alt="">
+                            <p>With over 30 years in the industry, our extensive knowledge and expertise allow us to
+                                understand and cater to the unique needs of luxury car buyers.</p>
+                        </div>
+                    </div>
+
+            </section>
+        </div>
+
+        <div class="AboutUs" id="aboutUs">
+
+            <h1 class="about-title">About Us</h1>
+
+            <!-- HISTORY -->
+            <section class="about-box">
+                <h2>2001 – TODAY</h2>
+                <p>
+                    Our showroom was founded with a simple mission — to make world-class luxury and
+                    high-performance sports cars accessible to passionate drivers. What started as a small
+                    curated garage has evolved into a trusted destination for premium pre-owned vehicles.
+                </p>
+            </section>
+            <!-- CURRENT STATUS – LOGO – FUTURE PLANS -->
+            <section class="about-flex3">
+                <div class="about-block">
+                    <h2>Current Status</h2>
+                    <p>
+                        We proudly host an exclusive collection ranging from exotic supercars to flagship
+                        luxury sedans and SUVs.
+                    </p>
+                </div>
+
+                <img src="LOGO.png" class="about-center-logo" alt="">
+
+                <div class="about-block">
+                    <h2>Future Plans</h2>
+                    <p>
+                        We aim to expand inventory, introduce nationwide delivery, and bring more iconic
+                        international models to India.
+                    </p>
+                </div>
+            </section>
+            <!-- OUR VISION (NEW SECTION YOU ADDED) -->
+            <section class="about-flex3">
+                <div class="about-block">
+                    <img src="CarsPngs/globalOffices.png" class="acheivementLogo" alt="">
+                    <h3> 3 Global Offices</h3>
+                </div>
+                <div class="about-block">
+                    <img src="CarsPngs/employeeslogo.png" class="acheivementLogo" alt="">
+                    <h3> 300+ employees.</h3>
+                </div>
+                <div class="about-block">
+                    <img src="CarsPngs/custmoerslogo.png" class="acheivementLogo" alt="">
+                    <h3> 10000+ happy customers.</h3>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <!-- 3️ LOGO LEFT + PASSAGE RIGHT -->
+        <div class="footer-info">
+            <img src="LOGO.png" class="footer-logo">
+
+            <p class="trust-text">
+                Your trust is our priority. Every car undergoes multi-point testing, documentation validation, and
+                detailing to guarantee a smooth, worry-free ownership experience. We aim to give you the best value
+                for
+                your money with transparent reports, no hidden issues, and well-maintained vehicles. Drive home with
+                confidence, knowing your car has been inspected, verified, and prepared with utmost care..
+            </p>
+        </div>
+
+        <!-- 2️ FULL WIDTH MAP -->
+        <div class="footer-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1600.5230469903781!2d78.41992465950753!3d17.42585337824983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9147355de11d%3A0xa3c0fc90c9049588!2sBig%20Boy%20Toyz!5e0!3m2!1sen!2sin!4v1763550115429!5m2!1sen!2sin"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <!-- 1️ FOOTER LINKS FULL WIDTH -->
+        <div class="footer-links">
+            <div class="footer-col">
+                <h3>BBM World</h3>
+                <ul>
+                    <li>
+                        <a href="#aboutUs">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#WhyUs"> Why Us</a>
+                    </li>
+                    <li>
+                        <a href="ContactUsPage.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>General</h3>
+                <ul>
+                    <li>
+                        <a href="#services">Vehicle Service</a>
+                    </li>
+                    <li>
+                        <a href="#services">Detailing</a>
+                    </li>
+                    <li>
+                        <a href="#services">Modification & Upgrade</a>
+                    </li>
+                    <li>
+                        <a href="#services">Painting Work</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Brands</h3>
+                <ul>
+                    <li>
+                        <a href="InventoryPage.html#audi">Audi</a>
+                    </li>
+                    <li>
+                        <a href="InventoryPage.html#bmw">BMW</a>
+                    </li>
+                    <li>
+                        <a href="InventoryPage.html#mercedes">Mercedes</a>
+                    </li>
+                    <li>
+                        <a href="InventoryPage.html#lambo">Lamborghini</a>
+                    </li>
+                    <li>
+                        <a href="InventoryPage.html#rr">Rolls Royce</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Styles</h3>
+                <ul>
+                    <li>SUV</li>
+                    <li>Coupe</li>
+                    <li>Convertible</li>
+                    <li>Sports</li>
+                    <li>Sedan</li>
+                </ul>
+            </div>
+        </div>
+        <!-- 4️ SOCIAL MEDIA -->
+        <div class="footer-socials">
+            <a href="#"><img src="icons/facebook.svg"></a>
+            <a href="#"><img src="icons/instagram.svg"></a>
+            <a href="#"><img src="icons/twitter-x.svg"></a>
+            <a href="#"><img src="icons/youtube.svg"></a>
+        </div>
+        <!-- 5️ COPYRIGHT -->
+        <div class="footer-copy">
+            © 2025 Your Company | All Rights Reserved
+        </div>
+        <div style="margin: 0 auto;
+             padding:10px ;
+              color: #ffffff; 
+              border: 2px solid yellow; 
+              text-decoration: none;
+               margin-top: 10px;
+               box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 6px 18px rgba(0, 0, 0, 0.3),
+    0 12px 36px rgba(0, 0, 0, 0.25);
+    :hover{
+        background-color: yellow;
+    }">
+            <a href="#" style="color: white; 
+            text-decoration: none;
+             ">Back to top ^
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
