@@ -764,15 +764,17 @@ footer h4 {
 /* CAR CARD */
 .carDetails {
   background: linear-gradient(180deg, #00000000, #666666);
-  width: 22%; /* CHANGE THIS TO CONTROL # OF CARDS PER ROW */
+  width: 22%;              /* Desktop: 4 cards per row */
+  min-width: 250px;        /* PREVENT shrinking on mobile */
   padding: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 6px 18px rgba(0, 0, 0, 0.3),
-    0 12px 36px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2), 0 6px 18px rgba(0,0,0,0.3),
+              0 12px 36px rgba(0,0,0,0.25);
   transition: transform 0.3s ease;
-  /* MAKE ALL CARDS SAME HEIGHT */
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 /* IMAGE */
@@ -780,17 +782,15 @@ footer h4 {
   width: 100%;
   height: 200px;
   object-fit: contain;
-  filter: drop-shadow(0px 20px 25px rgba(0, 0, 0, 0.55));
+  filter: drop-shadow(0px 20px 25px rgba(0,0,0,0.55));
   transition: transform 0.3s ease, filter 0.3s ease;
 }
-.carDetails :hover {
-  border: none;
-}
+
 .carDetails img:hover {
   transform: scale(1.15);
 }
 
-/* TEXT INSIDE CARD */
+/* TEXT */
 .carDetails p {
   margin: 8px 0;
   font-size: 18px;
@@ -798,9 +798,6 @@ footer h4 {
 }
 
 .car-info {
-  /* margin-top: 15px;
-  margin-top: 15px;
-  height: 100%; */
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -814,21 +811,21 @@ footer h4 {
 
 .car-price {
   font-size: 20px;
-  color: #ffffff;
+  color: white;
   margin-bottom: 5px;
   font-weight: bold;
 }
+
+/* BUTTON */
 .details-btn {
   display: inline-block;
-  /* margin-top: 15px; */
   margin-top: auto;
   padding: 10px 20px;
   border: 2px solid #fcd41d;
   color: black;
   text-transform: capitalize;
-  text-decoration: none;
-  transition: 0.3s ease;
   text-align: center;
+  transition: 0.3s ease;
 }
 
 .details-btn:hover {
@@ -1083,3 +1080,4 @@ footer h4 {
   object-fit: cover;
   filter: brightness(0.9);
 }
+
