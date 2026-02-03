@@ -906,6 +906,7 @@ footer h4 {
 }
 
 .buttons {
+  gap: 15px;      /* Space between buttons */
 }
 /* Demo button */
 .demo-btn {
@@ -1081,3 +1082,135 @@ footer h4 {
   filter: brightness(0.9);
 }
 
+/* --- MOBILE RESPONSIVE OVERRIDES --- */
+
+@media (max-width: 768px) {
+  /* 1. Reset Global Spacing */
+  html {
+    scroll-padding-top: 220px; /* More padding for stacked mobile nav */
+  }
+
+  /* 2. Navbar Fixes */
+  nav {
+    width: 100%; /* Use full width on small screens */
+    padding: 15px;
+   
+  }
+  
+  /* 3. Hero Section Stacking */
+  .Hero {
+    margin-top: 250px; /* Space for the fixed nav */
+    padding: 20px;
+  }
+  
+  .Hero p {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  /* 4. NewModels & Inventory Cards */
+  .Newmodels, .inventory, .Services, .Brands {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .carDetails {
+    width: 90% !important; /* Stack cards vertically */
+    margin: 0 auto;
+  }
+
+
+  .Newmodels a {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  /* 5. Why Us Section Fix */
+  .WhyUS-Content {
+    flex-direction: column;
+  }
+
+  .WhyUS-Container img {
+    width: 80%; /* Don't let it shrink to 30% on mobile */
+    float: none;
+    margin: 0 auto;
+  }
+
+  .Reason-Box {
+    width: 100%; /* Stack the boxes */
+  }
+
+  /* 6. About Us Scaling */
+  .about-flex3 {
+    flex-direction: column;
+  }
+
+  .about-center-logo {
+    width: 150px;
+    order: -1; /* Move logo to top of the flex stack */
+  }
+
+  /* 7. Footer Scaling */
+  .footer-info {
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .footer-info img {
+    margin-left: 0;
+  }
+
+  .footer-socials {
+    gap: 30px;
+  }
+
+  /* 8. Contact Page Fix */
+  .contact-page {
+    height: auto;
+    overflow: visible;
+  }
+
+  .contact-box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact-box h1 {
+    font-size: 30px;
+  }
+
+  .row {
+    flex-direction: column; /* Stack name/email/phone fields */
+  }
+
+  .contact-image {
+    display: none; /* Hide side image on mobile to save space */
+  }
+
+  /* 9. Car Individual Page Arrows */
+  .nav-arrows {
+    top: 150px;
+  }
+
+  .prev, .next {
+    margin: 0 5vw;
+    font-size: 30px;
+  }
+}
+
+/* Very Small Devices */
+@media (max-width: 480px) {
+  #inventoryTitle {
+    font-size: 40px;
+  }
+  
+  .Hero span {
+    font-size: 24px;
+  }
+  
+  .submit-btn, .backbtn {
+    width: 100%; /* Full width buttons for thumbs */
+  }
+}
